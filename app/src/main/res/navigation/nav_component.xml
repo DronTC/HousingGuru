@@ -23,4 +23,9 @@
             android:id="@+id/action_fragmentReg_to_fragmentReg"
             app:destination="@id/fragmentReg"/>
     </fragment>
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.housingguru.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" />
 </navigation>

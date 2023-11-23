@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.HousingGuru" parent="Base.Theme.HousingGuru" />
+    <style name="Theme.HousingGuru" parent="Base.Theme.HousingGuru"/>
 </resources>
