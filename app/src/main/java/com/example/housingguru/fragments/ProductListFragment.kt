@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
+import androidx.navigation.findNavController
 import com.example.housingguru.ListViewAdapter
 import com.example.housingguru.R
 import com.example.housingguru.model.Filter
@@ -26,8 +27,10 @@ class productListFragment : Fragment() {
                 listFilterHouses.add(i)
         }
 
+        listView.isClickable = true
         val adapter = ListViewAdapter(requireContext(), R.layout.list_item, listFilterHouses)
         listView.adapter = adapter
+
 
         return view
     }

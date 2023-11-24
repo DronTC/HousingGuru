@@ -42,5 +42,14 @@
         android:id="@+id/productListFragment"
         android:name="com.example.housingguru.fragments.productListFragment"
         android:label="fragment_product_page"
-        tools:layout="@layout/fragment_product_list" />
+        tools:layout="@layout/fragment_product_list" >
+        <action
+            android:id="@+id/action_productListFragment_to_productPageFragment"
+            app:destination="@id/productPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productPageFragment"
+        android:name="com.example.housingguru.fragments.productPageFragment"
+        android:label="fragment_product_page"
+        tools:layout="@layout/fragment_product_page" />
 </navigation>

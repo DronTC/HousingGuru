@@ -34,8 +34,7 @@ class FragmentAuth : Fragment() {
                 if(db.checkUser(login, password)){
                     Toast.makeText(requireContext(), "Пользователь $login авторизован",
                         Toast.LENGTH_SHORT).show()
-                    view.findNavController()
-                        .navigate(R.id.action_fragmentAuth_to_mainMenuFragment)
+                    view.findNavController().navigate(R.id.action_fragmentAuth_to_mainMenuFragment)
                 }
                 else
                     Toast.makeText(requireContext(), "Неверный логин или пароль",
