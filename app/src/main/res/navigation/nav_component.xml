@@ -33,5 +33,14 @@
         android:id="@+id/mainMenuFragment"
         android:name="com.example.housingguru.fragments.MainMenuFragment"
         android:label="fragment_main_menu"
-        tools:layout="@layout/fragment_main_menu" />
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_productListFragment"
+            app:destination="@id/productListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.example.housingguru.fragments.productListFragment"
+        android:label="fragment_product_page"
+        tools:layout="@layout/fragment_product_list" />
 </navigation>

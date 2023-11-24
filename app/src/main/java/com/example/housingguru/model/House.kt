@@ -1,4 +1,5 @@
 package com.example.housingguru.model
 
-class House (val city: String, val type: String, val price: Int, val rating: String) {
+class House (var imageId: Int, var name: String, var city: String, var description: String, var type: String,
+             var price: Int, var rating: Double) {
 }

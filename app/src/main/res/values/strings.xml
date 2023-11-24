@@ -12,7 +12,7 @@
     <string name="enter_city">Введите город</string>
     <string name="type">Тип</string>
     <string name="hotel">Отель</string>
-    <string name="apartments">апартаменты/квартира</string>
+    <string name="apartments">Апартаменты/квартира</string>
     <string name="villa">Вилла</string>
     <string name="hostel">Хостел</string>
     <string name="motel">Мотель</string>
@@ -20,4 +20,5 @@
     <string name="from">От:</string>
     <string name="before">До:</string>
     <string name="min_rating">Минимальный рейтинг</string>
+    <string name="confirm">Принять</string>
 </resources>
