@@ -21,7 +21,7 @@ class FragmentAuth : Fragment() {
         // Inflate the layout for this fragment
         var view = inflater.inflate(R.layout.fragment_auth, container, false)
         view.findViewById<TextView>(R.id.reg_tv).setOnClickListener{view.findNavController()
-            .navigate(R.id.action_fragmentReg_to_fragmentReg)}
+            .navigate(R.id.action_fragmentAuth_to_fragmentReg)}
 
         view.findViewById<Button>(R.id.auth_btn).setOnClickListener {
             val login = view.findViewById<EditText>(R.id.et_login).text.toString().trim()
@@ -34,6 +34,8 @@ class FragmentAuth : Fragment() {
                 if(db.checkUser(login, password)){
                     Toast.makeText(requireContext(), "Пользователь $login авторизован",
                         Toast.LENGTH_SHORT).show()
+                    view.findNavController()
+                        .navigate(R.id.action_fragmentAuth_to_mainMenuFragment)
                 }
                 else
                     Toast.makeText(requireContext(), "Неверный логин или пароль",

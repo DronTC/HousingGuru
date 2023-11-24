@@ -37,6 +37,9 @@ class FragmentReg : Fragment() {
 
                 view.findViewById<EditText>(R.id.et_login).text.clear()
                 view.findViewById<EditText>(R.id.et_password).text.clear()
+
+                view.findNavController()
+                    .navigate(R.id.action_fragmentReg_to_mainMenuFragment)
             }
         }
         return view

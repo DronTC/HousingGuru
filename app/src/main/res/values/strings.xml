@@ -7,5 +7,17 @@
     <string name="password">Пароль</string>
     <string name="enter_password">Введите пароль</string>
     <string name="enter">Войти</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_by_filters">Поиск по фильтрам</string>
+    <string name="reset">Сбросить</string>
+    <string name="enter_city">Введите город</string>
+    <string name="type">Тип</string>
+    <string name="hotel">Отель</string>
+    <string name="apartments">апартаменты/квартира</string>
+    <string name="villa">Вилла</string>
+    <string name="hostel">Хостел</string>
+    <string name="motel">Мотель</string>
+    <string name="price_per_day">Цена за сутки</string>
+    <string name="from">От:</string>
+    <string name="before">До:</string>
+    <string name="min_rating">Минимальный рейтинг</string>
 </resources>
