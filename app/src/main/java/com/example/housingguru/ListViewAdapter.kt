@@ -53,6 +53,7 @@ ArrayAdapter<House>(context, layoutResourceId, data) {
             intent.putExtra("type", item.type)
             intent.putExtra("price", item.price)
             intent.putExtra("rating", item.rating)
+            intent.putExtra("description", item.description)
             context.startActivity(intent)
         }
 

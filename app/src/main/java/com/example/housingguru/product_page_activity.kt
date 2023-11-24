@@ -3,8 +3,10 @@ package com.example.housingguru
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import de.hdodenhof.circleimageview.CircleImageView
 
 class product_page_activity : AppCompatActivity() {
@@ -18,6 +20,11 @@ class product_page_activity : AppCompatActivity() {
         findViewById<TextView>(R.id.type_tv).text = intent.getStringExtra("type")
         findViewById<TextView>(R.id.price_tv).text = intent.getStringExtra("price")
         findViewById<TextView>(R.id.rating_tv).text = intent.getStringExtra("rating")
+        findViewById<TextView>(R.id.description_tv).text = intent.getStringExtra("description")
+
+        findViewById<Button>(R.id.booking_btn).setOnClickListener {
+            Toast.makeText(this, "Номер забронирован", Toast.LENGTH_SHORT).show()
+        }
 
     }
 }
